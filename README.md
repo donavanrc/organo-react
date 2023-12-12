@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Organo (React.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Organo was designed with an entirely didactic purpose.
+
+The project is essentially a portal where contributors register by providing their name, position, URL of a profile image and selecting a technology group. Once registration is completed, a card with employee information is generated in the selected group.
+
+Registration data is temporary, which means that the information is not persisted, and if the page is updated, the data will be lost.
 
 ## Available Scripts
 

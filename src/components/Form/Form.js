@@ -6,16 +6,19 @@ import TextField from "../TextField"
 import './Form.css'
 
 export const Form = (props) => {
-    const [formData, setFormData] = useState({
+    const model = {
         name: '',
         position: '',
-        imageUrl: '',
+        image_url: '',
         group_id: ''
-    });
+    };
+
+    const [formData, setFormData] = useState(model);
 
     const onSubmit = (event) => {
         event.preventDefault();
         props.onSubmit(formData);
+        setFormData(model);
     }
 
     return(
@@ -36,17 +39,17 @@ export const Form = (props) => {
                     onChange={value => setFormData({ ...formData, position: value })} />
                 <TextField 
                     label="Image" 
-                    placeholder="Type an image url" 
-                    value={formData.imageUrl}
-                    onChange={value => setFormData({ ...formData, imageUrl: value})} />
+                    placeholder="Type an image URL" 
+                    value={formData.image_url}
+                    onChange={value => setFormData({ ...formData, image_url: value})} />
                 <ComboBox 
                     required={true} 
                     label="Group" 
                     placeholder="Select a group" 
                     items={props.groups}
                     value={formData.group_id}
-                    onChange={value => setFormData({ ...formData, group_id: value })} />
-                <Button>Create card</Button>
+                    onChange={value => setFormData({ ...formData, group_id: parseInt(value) })} />
+                <div><Button>Create card</Button></div>
             </form>
         </section>
     )

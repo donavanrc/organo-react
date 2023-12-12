@@ -1,0 +1,31 @@
+footer {
+    color: #fff;
+    background-color: #6278f7;
+    font-size: 14px;
+}
+
+footer > div {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 32px;
+}
+
+footer .social img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+footer .text {
+    text-align: right;
+}
+
+footer .logo {
+    justify-self: center;
+}
+
+footer .logo img {
+    height: 40px;
+}

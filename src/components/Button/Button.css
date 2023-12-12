@@ -4,8 +4,10 @@
     padding: 16px 16px;
     border-radius: 10px;
     border: none;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 .button:hover {

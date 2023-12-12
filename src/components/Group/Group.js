@@ -1,13 +1,23 @@
 import { Employee } from '../Employee/Employee';
 import './Group.css'
 
-export const Group = (props) => {
+export const Group = ({employees, title, textColor, primaryColor, secondaryColor}) => {
     return (
-        <section 
+        (employees.length > 0) && <section 
             className='group' 
-            style={{backgroundColor: props.secondaryColor}}>
-            <h3 style={{color: props.textColor}}>{props.title}</h3>
-            <Employee textColor={props.textColor} backgroundColor={props.primaryColor} data={{name: 'Donavan Carvalho', position: 'Developer', imageUrl: 'https://github.com/donavanrc.png'}}/>
+            style={{backgroundColor: secondaryColor}}>
+            <h3 style={{color: textColor}}>{title}</h3>
+            <div className='employees'>
+                {employees.map(employee => <Employee 
+                    key={employee.id}
+                    textColor={textColor} 
+                    backgroundColor={primaryColor} 
+                    data={{ 
+                        name: employee.name, 
+                        position: employee.position, 
+                        image_url: employee.image_url 
+                    }} />)}
+            </div>
         </section>
     );
 }
