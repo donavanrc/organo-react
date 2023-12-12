@@ -1,0 +1,51 @@
+[
+    { 
+      "id": 0, 
+      "name": "Programming", 
+      "text_color": "#600", 
+      "primary_color": "#f99", 
+      "secondary_color": "#fee"
+    },
+    { 
+      "id": 1, 
+      "name": "Front-end", 
+      "text_color": "#060", 
+      "primary_color": "#9f9", 
+      "secondary_color": "#efe"
+    },
+    { 
+      "id": 2, 
+      "name": "Data Science", 
+      "text_color": "#006", 
+      "primary_color": "#99f", 
+      "secondary_color": "#eef"
+    },
+    { 
+      "id": 3, 
+      "name": "DevOps", 
+      "text_color": "#660", 
+      "primary_color": "#ff9", 
+      "secondary_color": "#ffe"
+    },
+    { 
+      "id": 4, 
+      "name": "UX and Design", 
+      "text_color": "#606", 
+      "primary_color": "#f9f", 
+      "secondary_color": "#fef"
+    },
+    { 
+      "id": 5, 
+      "name": "Mobile", 
+      "text_color": "#066", 
+      "primary_color": "#9ff", 
+      "secondary_color": "#eff"
+    },
+    { 
+      "id": 6, 
+      "name": "Inovation and Management", 
+      "text_color": "#000", 
+      "primary_color": "#999", 
+      "secondary_color": "#eee"
+    }
+]

@@ -1,0 +1,21 @@
+.group {
+    text-align: center;
+    padding: 32px;
+}
+
+.group h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    /* font-style: italic; */
+    display: inline;
+    font-size: 32px;
+}
+
+.group h3::after {
+    padding: 8px 0;
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid;
+}
