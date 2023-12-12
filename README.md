@@ -6,6 +6,8 @@ The project is essentially a portal where contributors register by providing the
 
 Registration data is temporary, which means that the information is not persisted, and if the page is updated, the data will be lost.
 
+The project is available at https://organo-react-js-eosin.vercel.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
